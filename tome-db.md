@@ -1,6 +1,6 @@
 +++
 title = "tomeDB: simple data storage for app developers."
-date = "2022-03-25"
+date = "2022-05-14"
 
 [taxonomies]
 grant_type = [ "Bounty" ]
@@ -9,7 +9,7 @@ grant_category = [ "App Dev: Other" ]
 [extra]
 image = ""
 description = "tomeDB is a javascript library and a gall agent. The javascript library implements data contracts defined by a gall agent so frontend developers can store any key-value pairs, logs, feeds, or files."
-reward = "$55,000 in WSTR"
+reward = "5 stars"
 assignee = ""
 id = ""
 completed = false
@@ -90,14 +90,14 @@ A mutable log.
 
 ## Milestones
 
-### Milestone 1 - Key-value store - 30,000 WSTR
+### Milestone 1 - Key-value store - 3 stars
 
 For this milestone to be complete, there needs to be:
 - `%tome-api`: implements the api layer for handling requests from the UI and pokes/watches from other ships. Also, this should implement permissions.
 - `%tome-kv`: an agent that stores the key-value pairs. Should not need to know about permissions. Can only be accessed by host ship. `%tome-api` does all of the permission checking and subscriber management.
 - `@urbit/tome-db/kv`: implements the `%tome-kv` functionality in the javascript library to allow UI developers to easily store strings, objects, arrays, etc. against a key.
 
-### Milestone 2 - Log and feed stores - 15,000 WSTR
+### Milestone 2 - Log and feed stores - 1 star
 
 For this milestone to be complete, there needs to be:
 - `%tome-log`: an immutable log (append-only). Good for message queues, revision logs, etc. 
@@ -107,7 +107,7 @@ For this milestone to be complete, there needs to be:
 
 The log and feed implementation will be fairly similar, which is why they are bundled together.
 
-### Milestone 3 - Blob store - 10,000 WSTR
+### Milestone 3 - Blob store - 1 star
 
 For this milestone to be complete, there needs to be:
 - `%tome-api`: implements the api layer for handling requests from the UI and pokes/watches from other ships. Also, this should implement permissions.
@@ -120,4 +120,4 @@ For this milestone to be complete, there needs to be:
 - Coordinate with Holium on designs, frontend, and agents
 
 ## Reward
-$55,000 WSTR if all 3 milestones are completed.
+5 stars if all 3 milestones are completed.
