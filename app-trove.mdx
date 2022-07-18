@@ -21,13 +21,9 @@ work_request_link = "https://airtable.com/shr4qt9t9kz7RaOIa?prefill_Grant+ID=B01
 
 Having the ability to upload files to a personal or shared file drive is foundational to any operating system. Being that Urbit cannot (as of now) store large files, Trove will leverage third party storage solutions. Groups should be able to add files, manage folder hierarchy, view files and folders, and search for files.
 
-<--->
-
 ## Overview
 
 `Trove`: A shared file drive allowing the upload of files to an S3 bucket or IPFS and the ability to organize the file links in folders.
-
-<--->
 
 ## User stories
 
@@ -39,8 +35,6 @@ Having the ability to upload files to a personal or shared file drive is foundat
 6. As a group member, I want to view my group's trove.
 7. As a group admin, I want to manage permissions for adding files, adding folders, moving folders, and deleting files and folders.
 
-<--->
-
 ## Architecture
 
 The backend agent should store chronicles per group (or space) path (i.e. ~lomder-librun/my-group).
@@ -48,8 +42,6 @@ The backend agent should store chronicles per group (or space) path (i.e. ~lomde
 The backend agent should work alongside a client library to store metadata associated with a file hosting in S3 or IPFS. There would likely be two maps to manage. One being a map of file-url to metadata. The second being the folder structure and which files are in each folder.
 
 The client library will do the uploading to S3 or IPFS and forward the metadata to the backend agent upon success.
-
-<--->
 
 ## Permissions
 
@@ -77,15 +69,11 @@ A set of roles will be mapped to each action as below:
 
 Holium will work with the developer(s) to provide frontend support, but the team working on this bounty will be responsible for frontend implementation.
 
-<--->
-
 ## Milestone 1: 2 stars ($4k bonus if done by Assembly)
 
 Have a working file eHave a working file explorer app that can find files, transfer files, and drag and drop.
 
 For the milestone to be completed, the app must be approved by Holium and it must be hosted for distribution on Holium's app star (as well as your own if desired).
-
-<--->
 
 ## Future work
 
@@ -94,13 +82,9 @@ For the milestone to be completed, the app must be approved by Holium and it mus
 - Publicly permission folders and files to share with others and link file drives between groups.
 - Hooking into the Realm Oracle for quickly searching for files
 
-<--->
-
 ## Worker Requirements
 
 - Prefer two developers
 - At least one years of professional programming experience
 - Experience with full-stack development, including JS and some server-side language
 - Graduated from Hoon school
-
-<--->
