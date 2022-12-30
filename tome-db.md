@@ -120,4 +120,4 @@ For this milestone to be complete, there needs to be:
 - Coordinate with Holium on designs, frontend, and agents
 
 ## Reward
-5 stars if all 3 milestones are completed.
+
