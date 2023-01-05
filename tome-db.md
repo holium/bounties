@@ -107,6 +107,15 @@ For this milestone to be complete, there needs to be:
 
 The log and feed implementation will be fairly similar, which is why they are bundled together.
 
+### Milestone 3 - Blob store
+
+For this milestone to be complete, there needs to be:
+- `%tome-api`: implements the api layer for handling requests from the UI and pokes/watches from other ships. Also, this should implement 
+    permissions.
+- `%tome-blob`: a simple agent that stores IPFS metadata. 
+- `@urbit/tome-db/blob`: implements the `%tome-blob` functionality in the javascript library. Does the actual uploading of a file to IPFS, 
+    which then communicates to the tome backend, storing the metadata and hash.
+
 ## Requirements
 - At least three years of professional programming experience
 - Demonstrable experience with writing Gall agents
